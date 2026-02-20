@@ -1,4 +1,4 @@
-package assessment1;
+
 public class User extends Account {
     protected String pekerjaan;
     protected int usia;
