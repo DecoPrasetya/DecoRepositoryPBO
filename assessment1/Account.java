@@ -1,4 +1,4 @@
-package assessment1;
+
 public class Account {
     protected int id;
     protected String name;
