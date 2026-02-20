@@ -1,7 +1,5 @@
-package assessment1;
-import java.util.Scanner;
 
-import assessment1.Auth.Role;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
