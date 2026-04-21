@@ -181,12 +181,12 @@ public class Main {
                                             System.out.print("Nama Bank: ");
                                             String namaBank2 = sc.nextLine();
                                             
-                                            PembBank pembBank = new PembBank(idBank, namaBank, nominalBank, namaBank2);
+                                            Pembayaran pembBank = new PembBank(idBank, namaBank, nominalBank, namaBank2);
                                             System.out.println("\n--- Rincian Pembayaran Bank ---");
                                             System.out.println("ID: " + pembBank.getId());
                                             System.out.println("Nama: " + pembBank.getNama());
                                             System.out.println("Nominal: " + pembBank.getNominal());
-                                            System.out.println("Bank: " + pembBank.getBank());
+                                            System.out.println("Bank: " + ((PembBank)pembBank).getBank());
                                             System.out.println("Pembayaran Bank berhasil!\n");
                                             break;
                                         case "2":
@@ -202,12 +202,12 @@ public class Main {
                                             System.out.print("Nama E-Wallet (GCash/PayMaya/OVO/etc): ");
                                             String namaEWallet2 = sc.nextLine();
                                             
-                                            pembEWallet pembEW = new pembEWallet(idEWallet, namaEWallet, nominalEWallet, namaEWallet2);
+                                            Pembayaran pembEW = new PembEWallet(idEWallet, namaEWallet, nominalEWallet, namaEWallet2);
                                             System.out.println("\n--- Rincian Pembayaran E-Wallet ---");
                                             System.out.println("ID: " + pembEW.getId());
                                             System.out.println("Nama: " + pembEW.getNama());
                                             System.out.println("Nominal: " + pembEW.getNominal());
-                                            System.out.println("E-Wallet: " + pembEW.getEWallet());
+                                            System.out.println("E-Wallet: " + ((PembEWallet)pembEW).getEWallet());
                                             System.out.println("Pembayaran E-Wallet berhasil!\n");
                                             break;
                                         case "3":
